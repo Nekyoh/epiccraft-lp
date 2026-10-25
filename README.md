@@ -43,8 +43,8 @@ This is the source code for the official **Epic Craft Mod** landing page. A mode
 ---
 
 ## 📄 License
-
-This website's code is open-source. For the mod's license, please check the main mod repository.
+MIT License. Not affiliated with Mojang or Microsoft.\
+This website's code is open-source.
 
 ---
 <p align="center">
