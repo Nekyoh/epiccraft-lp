@@ -49,12 +49,16 @@ function selo(?array $r): string {
   <meta property="og:type" content="website">
   <meta property="og:title" content="<?= e(t('meta.title')) ?>">
   <meta property="og:description" content="<?= e(t('meta.desc')) ?>">
-  <meta property="og:image" content="res/img/banner.png">
+  <meta property="og:image" content="<?= e($CFG['url']) ?>/res/img/banner.png">
   <meta name="theme-color" content="#0f1610">
   <link rel="icon" type="image/png" href="res/img/favicon.png">
+  <?php $escolhido = isset($_GET['lang'], $CFG['idiomas'][$_GET['lang']]) ? $_GET['lang'] : null; ?>
+  <link rel="canonical" href="<?= e($CFG['url'] . '/' . ($escolhido ? '?lang=' . $escolhido : '')) ?>">
   <?php foreach ($CFG['idiomas'] as $cod => $_): ?>
-  <link rel="alternate" hreflang="<?= e($cod) ?>" href="?lang=<?= e($cod) ?>">
+  <link rel="alternate" hreflang="<?= e($cod) ?>" href="<?= e($CFG['url']) ?>/?lang=<?= e($cod) ?>">
   <?php endforeach; ?>
+  <link rel="alternate" hreflang="x-default" href="<?= e($CFG['url']) ?>/">
+  <meta property="og:url" content="<?= e($CFG['url'] . '/' . ($escolhido ? '?lang=' . $escolhido : '')) ?>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">

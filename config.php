@@ -7,6 +7,9 @@
  */
 return [
     'nome'    => 'Epic Craft',
+    // Endereço público do site (usado no link canônico e no sitemap)
+    'url'     => 'https://epiccraft.nekyoh.tech',
+
     'autores' => ['Tekyoh', 'Nezoru'],
 
     // Repositório no GitHub de onde vêm as versões, o .jar e as novidades
