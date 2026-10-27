@@ -29,8 +29,8 @@ return [
 
     // Deixe '' enquanto o link não existir: o botão aparece como "Em breve".
     'links' => [
-        'curseforge' => 'https://www.curseforge.com/minecraft/mc-mods/epic-craft-mod',
-        'modrinth'   => '',                       // ex.: https://modrinth.com/mod/epiccraft
+        'curseforge' => 'https://www.curseforge.com/minecraft/mc-mods/epic-craft-nekyoh',
+        'modrinth'   => 'https://modrinth.com/mod/epiccraft-nekyoh',
         'github'     => 'https://github.com/Nekyoh/epiccraft',
         'releases'   => 'https://github.com/Nekyoh/epiccraft/releases',
         'issues'     => 'https://github.com/Nekyoh/epiccraft/issues',
