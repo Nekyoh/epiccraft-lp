@@ -1,0 +1,14 @@
+# Resposta do GitHub guardada pelo site (gerada no servidor)
+/cache/*
+!/cache/.htaccess
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.log
+
+# Arquivos antigos movidos para apagar
+_to_delete/
